@@ -20,6 +20,8 @@ public class JsonServerImpl {
 
     @PostConstruct
     public void startServer() throws Exception {
+
+        System.out.println("Test");
         server.open("localhost", applicationConfiguration.getServerPort(), serverEvents);
     }
 }
